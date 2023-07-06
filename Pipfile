@@ -10,6 +10,8 @@ streamlit = "*"
 yfinance = "*"
 datetime = "*"
 altair = "*"
+pytz = "*"
+matplotlib = "*"
 
 [dev-packages]
 
