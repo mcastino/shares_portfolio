@@ -24,9 +24,9 @@ jobs:
           pip install pipenv
           pipenv install --system --deploy
 
-      - name: Build Streamlit app
+      - name: Run Streamlit app
         run: |
-          streamlit build portfolio.py --output-dir docs/
+          streamlit run portfolio.py --server.port $PORT --browser.serverAddress 0.0.0.0 --browser.gatherUsageStats False
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
