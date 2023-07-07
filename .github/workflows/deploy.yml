@@ -26,7 +26,7 @@ jobs:
 
       - name: Run Streamlit app
         run: |
-          streamlit run --server.port $PORT --browser.serverAddress 0.0.0.0 --browser.gatherUsageStats False portfolio.py
+          streamlit run --server.port $PORT portfolio.py
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
