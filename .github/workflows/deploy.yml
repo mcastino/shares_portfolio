@@ -27,9 +27,9 @@ jobs:
       - name: Set environment variable
         run: echo "API_KEY=${{ secrets.API_KEY }}" >> $GITHUB_ENV
 
-      - name: Build Streamlit app
+      - name: Run Streamlit app
         run: |
-          streamlit build portfolio.py --output-dir docs/
+          streamlit run --server.port ${{ secrets.PORT }} portfolio.py
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
