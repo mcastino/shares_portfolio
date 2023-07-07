@@ -12,6 +12,7 @@ datetime = "*"
 altair = "*"
 pytz = "*"
 matplotlib = "*"
+streamlit-authenticator = "*"
 
 [dev-packages]
 
