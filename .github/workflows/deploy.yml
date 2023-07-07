@@ -26,7 +26,7 @@ jobs:
 
       - name: Build Streamlit app
         run: |
-          streamlit build portfolio.py --output-dir dist/
+          streamlit build portfolio.py --output-dir docs/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
