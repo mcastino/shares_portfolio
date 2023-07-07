@@ -1,4 +1,6 @@
 import pandas as pd
+import os
+from dotenv import load_dotenv
 import yfinance as yf
 import requests
 import streamlit as st
@@ -11,9 +13,10 @@ from yaml.loader import SafeLoader
 
 def show_website():
   # Connect to Airtable.
+  load_dotenv()
+  api_key = os.getenv('API_KEY')
   base_id = 'appFdhFr1tPBm1yjW'
   table_name = 'fact_transactions'
-  api_key=''
   url = f'https://api.airtable.com/v0/{base_id}/{table_name}'
   headers = {'Authorization': f'Bearer {api_key}'}
   response = requests.get(url, headers=headers)

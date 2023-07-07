@@ -13,6 +13,7 @@ altair = "*"
 pytz = "*"
 matplotlib = "*"
 streamlit-authenticator = "*"
+python-dotenv = "*"
 
 [dev-packages]
 
