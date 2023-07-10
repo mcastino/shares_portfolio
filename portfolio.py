@@ -14,7 +14,7 @@ from yaml.loader import SafeLoader
 def show_website():
   # Connect to Airtable.
   load_dotenv()
-  api_key = st.secrets["api_key"])
+  api_key = st.secrets["api_key"]
   base_id = 'appFdhFr1tPBm1yjW'
   table_name = 'fact_transactions'
   url = f'https://api.airtable.com/v0/{base_id}/{table_name}'
