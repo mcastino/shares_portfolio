@@ -91,9 +91,6 @@ def show_website():
   chart_p = alt.Chart(df_portfolio_summary).mark_line().encode(
       x='Date',
       y='Profit'
-  ).properties(
-      height=500,
-      width = 'container'
   ).configure_axis(
       grid=False
   ).configure_view(
@@ -173,9 +170,6 @@ def show_website():
     chart = alt.Chart(ticker_df).mark_line().encode(
         x='Date',
         y='Close'
-    ).properties(
-        height=400,
-        width = 'container'
     ).configure_axis(
         grid=False
     ).configure_view(
