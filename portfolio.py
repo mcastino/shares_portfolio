@@ -92,7 +92,8 @@ def show_website():
       x='Date',
       y='Profit'
   ).properties(
-      height=500
+      height=500,
+      width = 'container'
   ).configure_axis(
       grid=False
   ).configure_view(
@@ -173,7 +174,8 @@ def show_website():
         x='Date',
         y='Close'
     ).properties(
-        height=400
+        height=400,
+        width = 'container'
     ).configure_axis(
         grid=False
     ).configure_view(
